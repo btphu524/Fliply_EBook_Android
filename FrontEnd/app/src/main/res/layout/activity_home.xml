@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!-- Nội dung chính: Layout XML -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+        <!-- Header Section  -->
+        <LinearLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:paddingTop="@dimen/Padding_header"
+            android:paddingBottom="11dp"
+            android:layout_marginBottom="7dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/appTitleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!-- Icon menu (thay vì back, dùng để mở drawer) -->
+                <ImageView
+                    android:id="@+id/icon_menu"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/menu_icon" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginEnd="40dp">
+                    <TextView
+                        android:id="@+id/appTitleText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Fliply"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/headerDivider"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#000000"
+                android:layout_marginBottom="4dp"
+                android:orientation="vertical" />
+
+            <!-- Search Bar (giống XML) -->
+            <LinearLayout
+                android:id="@+id/searchBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:background="@drawable/search_input_background"
+                android:paddingVertical="9dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginHorizontal="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/searchHintText"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="Name..." />
+
+                <ImageView
+                    android:id="@+id/searchIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/search_icon"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scrollViewMain"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!-- Banner Section with viewPage2 -->
+                <LinearLayout
+                    android:id="@+id/bannerLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                    <!-- ViewPager2 cho banner slider -->
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/bannerViewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="225dp"
+                        android:layout_marginHorizontal="10dp" />
+
+                    <!-- Indicator dots -->
+                    <LinearLayout
+                        android:id="@+id/indicatorLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        android:orientation="horizontal" />
+                </LinearLayout>
+
+                <!--category-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="24dp">
+                    <!-- Category Section -->
+                    <LinearLayout
+                        android:id="@+id/categoryHeaderLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="22dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/categoryTitle"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_marginEnd="4dp"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:text="Category" />
+
+                        <TextView
+                            android:id="@+id/viewAllCategories"
+                            android:textColor="@color/ping"
+                            android:textSize="18sp"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:layout_marginEnd="10dp"
+                            android:text="View all" />
+                    </LinearLayout>
+
+                    <!--recycle-->
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_categories"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:scrollbars="horizontal"
+                        android:layout_marginHorizontal="10dp"
+                        android:nestedScrollingEnabled="false" />  <!-- Tắt nested scroll để tránh conflict với ScrollView cha -->
+
+                </LinearLayout>
+
+                <!--new book-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="24dp">
+                    <!-- New book Section -->
+                    <LinearLayout
+                        android:id="@+id/newBooksHeaderLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="22dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/newBooksTitle"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_marginEnd="4dp"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:text="New books" />
+
+                        <TextView
+                            android:id="@+id/viewAllNewBooks"
+                            android:textColor="@color/ping"
+                            android:textSize="18sp"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:layout_marginEnd="10dp"
+                            android:text="View all" />
+                    </LinearLayout>
+
+                    <!-- NEW: 2 Hàng Cuộn Ngang Độc Lập -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginHorizontal="10dp">
+
+                        <!-- Hàng 1: Cuộn ngang -->
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_new_books_row1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="horizontal"
+                            android:nestedScrollingEnabled="false" />
+
+                        <!-- Hàng 2: Cuộn ngang độc lập -->
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_new_books_row2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="horizontal"
+                            android:nestedScrollingEnabled="false"
+                            android:layout_marginTop="8dp" />  <!-- Khoảng cách giữa 2 hàng -->
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- ProgressBar cho loading toàn trang (center) -->
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- Phần dưới nếu cần (ví dụ: bottom nav), nhưng theo XML của bạn thì không có -->
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:itemTextAppearance="@style/MenuTitleAppearance"
+        app:itemIconTint="@color/text_primary"
+        app:itemBackground="@drawable/nav_menu_item_background"
+        app:itemTextColor="@color/text_primary"
+        app:subheaderTextAppearance="@style/SectionHeaderStyle"
+        app:menu="@menu/nav_menu"
+        android:background="@color/white"
+        android:elevation="8dp"
+        android:outlineProvider="bounds"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

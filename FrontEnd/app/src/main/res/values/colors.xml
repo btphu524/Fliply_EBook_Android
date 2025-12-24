@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray_light">#FF999999</color>
+    <color name="gray_blur">#4B999999</color>
+    <color name="red_title">#FFE65C4B</color>
+    <color name="ping_blur">#CDE65C4B</color>
+    <color name="ping">#FFE65C4B</color>
+    
+    <!-- Pagination Colors -->
+    <color name="primary_color">#2196F3</color>
+    <color name="primary_color_dark">#1976D2</color>
+    <color name="primary_color_light">#BBDEFB</color>
+    <color name="primary_color_pressed">#E3F2FD</color>
+
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+
+    <color name="surface_color">#FFFFFF</color>
+    <color name="surface_color_light">#FAFAFA</color>
+
+    <color name="divider_color">#E0E0E0</color>
+
+    <color name="disabled_background">#F5F5F5</color>
+    <color name="disabled_stroke">#BDBDBD</color>
+    <color name="disabled_text">#9E9E9E</color>
+    
+    <!-- Additional colors for new UI -->
+    <color name="light_gray">#F5F5F5</color>
+    <color name="gray">#757575</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="accent_color">#2196F3</color>
+    
+    <!-- New Modern Colors -->
+    <color name="gradient_start">#FF6B6B</color>
+    <color name="gradient_center">#FF8E8E</color>
+    <color name="gradient_end">#FFB6B6</color>
+    
+    <!-- Menu Item Colors -->
+    <color name="menu_item_pressed">#F0F0F0</color>
+    <color name="menu_item_selected">#E3F2FD</color>
+    <color name="menu_icon_background">#F5F5F5</color>
+    
+    <!-- Status Colors -->
+    <color name="online_status">#4CAF50</color>
+    <color name="offline_status">#9E9E9E</color>
+    
+    <!-- Feature Colors -->
+    <color name="favorite_color">#FF6B6B</color>
+    <color name="history_color">#4CAF50</color>
+    <color name="feedback_color">#FF9800</color>
+    <color name="contact_color">#2196F3</color>
+    <color name="password_color">#9C27B0</color>
+    <color name="logout_color">#F44336</color>
+    
+    <!-- Pink Colors -->
+    <color name="pink_primary">#E91E63</color>
+    <color name="pink_light">#F8BBD9</color>
+    <color name="pink_dark">#C2185B</color>
+
+    <!-- Admin -->
+    <color name="admin_footer">#3F2A24</color>
+    <color name="admin_footer_text_color">#B7AD30</color>
+
+    <!-- Pagination tokens -->
+    <color name="pagination_icon_background">#F1EDFE</color>
+    <color name="pagination_icon_tint">#5E4AE3</color>
+    <color name="pagination_active_background">#5E4AE3</color>
+    <color name="pagination_active_text">#FFFFFF</color>
+</resources>

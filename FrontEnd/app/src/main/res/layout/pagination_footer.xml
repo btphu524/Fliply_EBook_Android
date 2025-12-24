@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical|center_horizontal"
+    android:padding="8dp"
+    android:background="@android:color/transparent">
+
+    <!-- Pagination Controls -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="4dp">
+
+        <!-- First Page Button -->
+        <ImageButton
+            android:id="@+id/btn_first_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:padding="6dp"
+            android:contentDescription="@string/pagination_first"
+            android:src="@drawable/ic_first_page"
+            android:tint="@color/pink_primary"
+            android:enabled="false" />
+
+        <!-- Previous Page Button -->
+        <ImageButton
+            android:id="@+id/btn_prev_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:padding="6dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/pagination_previous"
+            android:src="@drawable/ic_previous_page"
+            android:tint="@color/pink_primary"
+            android:enabled="false" />
+
+        <!-- Page Numbers Container -->
+        <LinearLayout
+            android:id="@+id/container_page_numbers"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:minHeight="36dp"
+            android:orientation="horizontal"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp">
+
+            <!-- Page numbers will be added dynamically -->
+
+        </LinearLayout>
+
+        <!-- Next Page Button -->
+        <ImageButton
+            android:id="@+id/btn_next_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:padding="6dp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/pagination_next"
+            android:src="@drawable/ic_next_page"
+            android:tint="@color/pink_primary"
+            android:enabled="false" />
+
+        <!-- Last Page Button -->
+        <ImageButton
+            android:id="@+id/btn_last_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:padding="6dp"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/pagination_last"
+            android:src="@drawable/ic_last_page"
+            android:tint="@color/pink_primary"
+            android:enabled="false" />
+
+    </LinearLayout>
+</LinearLayout>

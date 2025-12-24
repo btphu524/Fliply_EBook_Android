@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fliply</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_change_password">Change password</string>
+    <string name="nav_sign_out">Sign out</string>
+    <string name="nav_account">Account</string>
+    <string name="nav_other_features">Other features</string>
+    <string name="nav_favorite">Favorite</string>
+    <string name="nav_history">History</string>
+    <string name="nav_feedback">Feedback</string>
+    <string name="nav_contact">Contact</string>
+    <string name="chapter_previous">Previous</string>
+    <string name="chapter_next">Next</string>
+    <string name="chapter_current_format">Now reading • %1$s</string>
+    <string name="chapter_current_placeholder">Now reading • Loading…</string>
+    <string name="chapter_current_unknown">Unknown chapter</string>
+    <string name="chapter_current_full_book">Full book</string>
+    <string name="chapter_list_button">Chapters</string>
+    <string name="chapter_sheet_title">Chapters</string>
+    <string name="chapter_sheet_count">%1$d chapters</string>
+    <string name="chapter_sheet_count_placeholder">0 chapters</string>
+    <string name="chapter_sheet_empty">Chapter list is not available</string>
+    <string name="chapter_close">Close</string>
+    <string name="chapter_status_reading">Reading</string>
+    <string name="chapter_fallback_title">Chapter %1$d</string>
+    <string name="chapter_label_number">Chapter %1$d</string>
+    <string name="author_label">Author: %1$s</string>
+    <string name="author_unknown">Unknown</string>
+    <string name="author_label_placeholder">Author: …</string>
+    <string name="pagination_first">First page</string>
+    <string name="pagination_previous">Previous page</string>
+    <string name="pagination_next">Next page</string>
+    <string name="pagination_last">Last page</string>
+</resources>

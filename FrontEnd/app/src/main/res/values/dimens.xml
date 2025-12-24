@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_title">20sp</dimen>
+    <dimen name="text_size_body">18sp</dimen>
+    <dimen name="text_size_profile">28sp</dimen>
+    <dimen name="text_follow_us">12sp</dimen>
+
+    <dimen name="Padding_header">40dp</dimen>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Navigation Menu Item Style -->
+    <style name="NavigationMenuStyle" parent="Widget.Design.NavigationView">
+        <item name="itemTextAppearance">@style/MenuTitleAppearance</item>
+        <item name="itemIconTint">@color/text_primary</item>
+        <item name="itemBackground">@drawable/nav_menu_item_background</item>
+        <item name="itemTextColor">@color/text_primary</item>
+    </style>
+    
+    <!-- Menu Title Appearance -->
+    <style name="MenuTitleAppearance" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+    
+    <!-- Section Header Style - cho "Other features" và "Account" -->
+    <style name="SectionHeaderStyle" parent="TextAppearance.AppCompat.Headline">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/pink_primary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">0.5</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+    </style>
+    
+    <!-- Profile Name Style -->
+    <style name="ProfileNameStyle" parent="TextAppearance.AppCompat.Headline">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    
+    <!-- Profile Email Style -->
+    <style name="ProfileEmailStyle" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:alpha">0.9</item>
+    </style>
+    
+    <!-- Stats Number Style -->
+    <style name="StatsNumberStyle" parent="TextAppearance.AppCompat.Display1">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    
+    <!-- Stats Label Style -->
+    <style name="StatsLabelStyle" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:alpha">0.8</item>
+    </style>
+    
+    <!-- Pagination Button Style -->
+    <style name="PaginationButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:background">@drawable/pagination_button_background</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+    
+</resources>
